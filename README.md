@@ -39,7 +39,7 @@ Number of classes = 43
 
 Here is an exploratory visualization of the data set. It is a bar chart where X-axis represents 43 unique classes and Y-axis represents the count of images in each class
 
-
+![alt text][./images_for_writeup/Screenshot 2021-06-26 at 2.06.37 PM.png]
 
 ### Design and Test a Model Architecture
 
@@ -81,12 +81,12 @@ My final model results were:
 * validation set accuracy of 93.6%
 * test set accuracy of 92.7%
 
-![alt text][images_for_writeup/validation_accuracy.png]
+![alt text][./images_for_writeup/validation_accuracy.png]
 
 An iterative approach was chosen 
 * The architecture of the model is a well known architecture initially proposed by Yann Lecun called LeNet. A schematic of the architecture is as below
 
-![alt text][images_for_writeup/1_1TI1aGBZ4dybR6__DI9dzA.png]
+![alt text][./images_for_writeup/1_1TI1aGBZ4dybR6__DI9dzA.png]
 
 * Although the architecture is well known, I had to tune the hyperparameters manually to and run the training set several times so that the desired accuracy is achieved
 * Underfitting: With only 50 EPOCHS and no preprocessing of the training images, the overall training accuracy achieved was around 80% for training set and 60% for validation set
