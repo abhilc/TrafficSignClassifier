@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 
 #### 1.This is a README document of the steps taken in detail to accomplish traffic sign recognition.
 
-You're reading it! and here is a link to my [project code](https://github.com/udacity/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+You're reading it! and here is a link to my [project code](https://github.com/abhilc/TrafficSignClassifier/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 
@@ -39,9 +39,7 @@ Number of classes = 43
 
 Here is an exploratory visualization of the data set. It is a bar chart where X-axis represents 43 unique classes and Y-axis represents the count of images in each class
 
-<img src="https://view5f1639b6.udacity-student-workspaces.com/view/CarND-Traffic-Sign-Classifier-Project/images_for_writeup/Screenshot%202021-06-26%20at%202.06.37%20PM.png"
-     alt="BarChart"
-     style="float: left; margin-right: 10px;" />
+
 
 ### Design and Test a Model Architecture
 
@@ -49,9 +47,6 @@ As a first step, I decided to convert the images to grayscale because a single c
 
 After grayscaling, I also normalized this image using the formula (pixel - 128)/128. This will result in pixels having values between -1 and +1. This is sufficient for us because these values indicate the intensities of pixels. The below image shows the colored image, and the grayscaled normalized image below it
 
-<img src="https://view5f1639b6.udacity-student-workspaces.com/view/CarND-Traffic-Sign-Classifier-Project/images_for_writeup/before_after.png"
-     alt="BarChart"
-     style="float: left; margin-right: 10px;" />
 
 
 
@@ -83,19 +78,15 @@ BATCH_SIZE 128
 
 My final model results were:
 * training set accuracy of 99.3%
-* validation set accuracy of 93.2%
+* validation set accuracy of 93.6%
 * test set accuracy of 92.7%
 
-<img src="https://view5f1639b6.udacity-student-workspaces.com/view/CarND-Traffic-Sign-Classifier-Project/images_for_writeup/validation_accuracy.png"
-     alt="BarChart"
-     style="float: left; margin-right: 10px;" />
+![alt text][images_for_writeup/validation_accuracy.png]
 
 An iterative approach was chosen 
 * The architecture of the model is a well known architecture initially proposed by Yann Lecun called LeNet. A schematic of the architecture is as below
 
-<img src="https://view5f1639b6.udacity-student-workspaces.com/view/CarND-Traffic-Sign-Classifier-Project/images_for_writeup/1_1TI1aGBZ4dybR6__DI9dzA.png"
-     alt="BarChart"
-     style="float: left; margin-right: 10px;" />
+![alt text][images_for_writeup/1_1TI1aGBZ4dybR6__DI9dzA.png]
 
 * Although the architecture is well known, I had to tune the hyperparameters manually to and run the training set several times so that the desired accuracy is achieved
 * Underfitting: With only 50 EPOCHS and no preprocessing of the training images, the overall training accuracy achieved was around 80% for training set and 60% for validation set
@@ -112,11 +103,11 @@ An iterative approach was chosen
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][../downloaded_images/11_rigtoffway_atnextintersection_32x32x3.jpg] 
-![alt text][../downloaded_images/12_priority_road_32x32x3.jpg] 
-![alt text][../downloaded_images/17_noentry_32x32x3.jpg] 
-![alt text][../31_wildanimalscrossing_32x32x3.jpg] 
-![alt text][../34_turn_left_ahead.jpg]
+![alt text][11_rigtoffway_atnextintersection_32x32x3.jpg] 
+![alt text][12_priority_road_32x32x3.jpg] 
+![alt text][17_noentry_32x32x3.jpg] 
+![alt text][31_wildanimalscrossing_32x32x3.jpg] 
+![alt text][34_turn_left_ahead.jpg]
 
 All the images were classified correctly
 
